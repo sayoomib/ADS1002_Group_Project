@@ -1,0 +1,12 @@
+#importing libraries
+#in the terminal write it as pip install (library to install)
+
+#import warnings
+import warnings
+warnings.simplefilter("ignore", category=FutureWarning)
+warnings.simplefilter("ignore", category=DeprecationWarning)
+
+#import data
+test=pd.read_csv("Rossman_test.csv")
+store=pd.read_csv("Rossman_store.csv")
+train=pd.read_csv("Rossman_train.csv") #there is a mix type in column 7
